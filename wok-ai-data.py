@@ -127,7 +127,7 @@ class PubData:
         self.ax1.get_xaxis().set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
         self.ax1.get_xaxis().set_tick_params(rotation=60)
         print("Saving %s" %self.filename)
-        self.fig.savefig("%s.svg" % self.filename, dpi=300)
+        self.fig.savefig(os.path.join("output", "%s.svg" % self.filename), dpi=300)
         plt.close(self.fig)
         return self
 
@@ -153,7 +153,7 @@ class PubData:
         self.ax1.get_xaxis().set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
         self.ax1.get_xaxis().set_tick_params(rotation=60)
         print("Saving %s" %self.filename)
-        self.fig.savefig("%s.svg" % self.filename, dpi=300)
+        self.fig.savefig(os.path.join("output", "%s.svg" % self.filename), dpi=300)
         plt.close(self.fig)
         return self
 
@@ -187,7 +187,7 @@ class PubData:
         self.ax1.get_xaxis().set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
         self.ax1.get_xaxis().set_tick_params(rotation=60)
         print("Saving %s" %self.filename)
-        self.fig.savefig("%s.svg" % self.filename, dpi=300)
+        self.fig.savefig(os.path.join("output", "%s.svg" % self.filename), dpi=300)
         plt.close(self.fig)
         return self
 
